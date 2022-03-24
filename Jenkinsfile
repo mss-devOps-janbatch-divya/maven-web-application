@@ -8,7 +8,7 @@ git branch: 'development', credentialsId: '78dc46fd-91ef-4747-9a53-3f2dccf54e12'
 'https://github.com/mss-devOps-janbatch-divya/maven-web-application.git'
 }
 
-    
+/*    
 //Build stage
 stage('Build'){
 sh"$mavenHome/bin/mvn clean package"
@@ -30,5 +30,5 @@ sshagent(['384d90a5-8011-4729-b70a-5ec044688fa5']) {
 sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@35.154.66.193:/opt/apache-tomcat-9.0.59/webapps"   
 }
 }
-
+*/
 }//Node closing
