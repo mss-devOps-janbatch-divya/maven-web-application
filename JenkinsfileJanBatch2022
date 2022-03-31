@@ -36,7 +36,7 @@ node{
 try{
 //Checkout stage
 stage('checkoutcode'){
-sendSlackNotifications(STARTED)
+sendSlackNotifications('STARTED')
 git branch: 'development', credentialsId: '78dc46fd-91ef-4747-9a53-3f2dccf54e12', url:
 'https://github.com/mss-devOps-janbatch-divya/maven-web-application.git'
 }
